@@ -28,16 +28,14 @@ class MyApp extends StatelessWidget {
             brightness: Brightness.light,
           ),
           useMaterial3: true,
-          cardTheme: CardTheme(
+          cardTheme: CardThemeData(
             elevation: 2,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(12),
             ),
           ),
           inputDecorationTheme: InputDecorationTheme(
-            border: OutlineInputBorder(
-              borderRadius: BorderRadius.circular(12),
-            ),
+            border: OutlineInputBorder(borderRadius: BorderRadius.circular(12)),
             filled: true,
           ),
         ),
@@ -52,7 +50,7 @@ class MyApp extends StatelessWidget {
 }
 
 /// Auth Wrapper
-/// 
+///
 /// Checks authentication state and routes to appropriate screen
 class AuthWrapper extends StatelessWidget {
   const AuthWrapper({super.key});

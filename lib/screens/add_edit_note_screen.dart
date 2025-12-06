@@ -195,7 +195,7 @@ class _AddEditNoteScreenState extends State<AddEditNoteScreen> {
 
             // Category Dropdown
             DropdownButtonFormField<String>(
-              value: _selectedCategory,
+              initialValue: _selectedCategory,
               decoration: const InputDecoration(
                 labelText: 'Category',
                 border: OutlineInputBorder(),
@@ -219,7 +219,7 @@ class _AddEditNoteScreenState extends State<AddEditNoteScreen> {
 
             // Priority Dropdown
             DropdownButtonFormField<String>(
-              value: _selectedPriority,
+              initialValue: _selectedPriority,
               decoration: const InputDecoration(
                 labelText: 'Priority',
                 border: OutlineInputBorder(),
